@@ -1,0 +1,126 @@
+*{            /* Tüm herşeyi kapsar*/
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+html{ /* Tüm herşeyi kapsar*/
+    font-size: 7px;
+
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem; /* bulunduğu değeri 1.6 ile çarp*/
+    line-height: 1.5; /* satırlarda boyuna boşluk diğer satırlarla*/
+    text-align: center;
+    background-color: #333;
+    color: white; /* text rengi*/
+}
+a{
+    text-decoration: none;/* alt çizgi sil*/
+}
+p{
+    padding: 1.6rem 0;/*üstten ve alttan 1.6rem boşluk sağdan ve soldan 0 rem boşluk */
+}
+img{/*görseli ölçeklendirmek için */
+    width: 100%;
+    height:auto;
+
+}
+header{
+    height: 46rem;
+    
+}
+header .bg-image{/* headerin bg-image classına sahip olanlar için*/
+position: absolute;/* yukarıya göre görüntüyü ayarla*/
+background-image: url("images/resin1.jpeg");
+background-size: cover;/* cover yani kapsayıcı*/
+background-position: center ;
+height: 46rem;
+width: 100%;
+opacity: 0.5;/* şeffaflık*/
+z-index: -1;/* görüntüyü arka plana al*/
+}
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+.btn{
+    display: inline-block;
+    background: #333;
+    color: white;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    transition: all 0.4s;/* tümü için 0.4 sn yavaş şekilde aç*/
+}
+.btn:hover{/* butonun üzerine geldiğinde*/
+    background-color: beige;
+    color: #333;
+
+}
+#section-a{
+    background-color: white;
+    color: #333;
+    padding: 3.2rem 0 ; /* iç boşluk */
+
+}
+#section-b{
+    padding: 2rem;/*her taraftan 2 remlik boşluk bırak*/
+}
+#section-b ul{
+    list-style: none;/*listelerin başlarına bir imge koyma*/
+}
+#section-b li{
+    background:white ;
+    color: #333;
+    margin-bottom: 1.5rem;/*diğer listelerle arasına 1.5 rem boşluk ekler */
+}
+.col-content{
+    padding: 1.5rem;
+}
+#section-c{
+    background-color: beige;
+    color:#333;
+    padding: 5rem;
+}
+#section-d .box{
+    padding: 5rem;
+}
+#section-d .box:first-child{
+    background-color: rgb(13, 49, 49);
+}
+footer{
+    padding: 4rem;
+    background-color: black;
+    color: white;
+}
+footer a{
+    color: yellowgreen;
+}
+
+footer a:hover{
+    color: antiquewhite;
+}
+@media screen and (min-width:800px){
+    html{
+        font-size: 9px;
+    }
+    
+} 
+@media screen and (min-width:1200px){
+    html{
+        font-size:11px;
+    }
+    #section-b li{
+        width:28%;
+        margin:1%;
+        display: inline-block;/*kartların tek satırda yan yana gelmesini sağlar */
+    }
+    .box{
+        width: 50%;
+        float: left;/*boxların tek satırda yan yana gelmesini sağlar */
+    }
+    
+}
